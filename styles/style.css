@@ -205,12 +205,23 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--primary-white-color);
 }
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/imghead.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .main-header {
 text-align: center;
 background-color: var(--primary-bg-color);
 padding-top: 200px;
 padding-bottom: 200px;
 }
+
 .main-work {
 font-size: 36px;
 line-height: 1.16;
@@ -226,6 +237,7 @@ margin-bottom: 50px;
 .working-section {
     padding-top: 0px;
     }
+
 /*--------------------------------------- Преимущества / Portfolio --------------------------------------------*/
 .visually-hidden {
     position: absolute;
