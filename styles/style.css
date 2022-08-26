@@ -134,7 +134,7 @@ ul {list-style: none;}
 .link {text-decoration: none;}
 
 .menu-address .link {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -239,6 +239,79 @@ background-size: 70px, 70px;
 .list-item:nth-child(4)::before {
     background-image: url(../images/astronaut.svg);
 }
+
+.icon-clients {
+display: flex;
+align-items: baseline;
+column-gap: 10px;
+}
+.clients-block-icon {
+    display: inline-block;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+/*-------------------------- icon ----------------------*/
+.social-list {
+display: flex;
+justify-content: center;
+column-gap: 10px;
+margin-bottom: 30px;
+}
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.social-list-icon {
+   width: 20px;
+   height: 20px;  
+   fill: #AFB1B8;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--acent-color);
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: var(--primary-white-color);
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #757575;  
+}
+.address-link-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+    }
+.smartphone-link-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor; 
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 6px;
+   height: 80px;
+   margin-left: 70px;
+   margin-top: 20px;
+   justify-content: bottom;
+}
+
+/* ----------------------------------------------------------- */
 .main-header {
 text-align: center;
 background-color: var(--primary-bg-color);
@@ -261,6 +334,7 @@ margin-bottom: 50px;
 .working-section {
     padding-top: 0px;
     }
+
 
 /*--------------------------------------- Преимущества / Portfolio --------------------------------------------*/
 .visually-hidden {
@@ -315,7 +389,7 @@ letter-spacing: 0.03em;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
