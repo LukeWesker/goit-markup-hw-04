@@ -352,16 +352,19 @@ ul {list-style: none;}
     height: 80px;
     margin-left: 70px;
     margin-top: 20px;
+   
 }
 .text-address {
     color: var(--primary-white-color);
-    line-height: 1.14;
+    line-height: 16.41px;
     font-size: 14px;
+    letter-spacing: 3%;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 .box-web {
     display: flex;
+    align-items: baseline;
 }
 /* ----------------------------------------------------------- */
 .main-header {
