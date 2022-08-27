@@ -246,21 +246,28 @@ align-items: baseline;
 column-gap: 10px;
 }
 .clients-block-icon {
-    display: inline-block;
+    display: flex;
     width: 170px;
     height: 92px;
-    align-items: center;
-    justify-content: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    padding: 16px 32px;
 }
-
+.clients-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-list-item:hover,
+.social-list-item:focus {
+    background-color: var(--acent-color);
+}
 /*-------------------------- icon ----------------------*/
 .social-list {
-display: flex;
-justify-content: center;
-column-gap: 10px;
-margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-bottom: 30px;
 }
 .social-list-link {
     display: flex;
@@ -270,10 +277,29 @@ margin-bottom: 30px;
     height: 44px;
     border-radius: 50%;
 }
+.social-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
 .social-list-icon {
    width: 20px;
    height: 20px;  
    fill: #AFB1B8;
+}
+.social-list-icon-footer {
+    width: 20px;
+   height: 20px;  
+   fill: var(--primary-white-color);
+}
+.social-list-address {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
 }
 
 .social-list-link:hover,
@@ -305,12 +331,20 @@ margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     width: 6px;
-   height: 80px;
-   margin-left: 70px;
-   margin-top: 20px;
-   justify-content: bottom;
+    height: 80px;
+    margin-left: 70px;
+    margin-top: 20px;
 }
-
+.text-address {
+    color: var(--primary-white-color);
+    line-height: 1.14;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.box-web {
+    display: flex;
+}
 /* ----------------------------------------------------------- */
 .main-header {
 text-align: center;
